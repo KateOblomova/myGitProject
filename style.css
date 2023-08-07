@@ -3,7 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #1d5d9b;
+  background-color: #1d5c9bc9;
   font-family: "Bebas Neue";
   font-weight: 50;
   width: 80%;
@@ -24,6 +24,27 @@ h2 {
 .nav-left {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+#logo-img {
+  padding-top: 3%;
+  width: 20%;
+  height: 30%;
+  /*transition??*/
+}
+.logo-img-swap {
+  display: none;
+  padding-top: 2.15%;
+  /*width: 80px;
+  height: 100px; ???*/
+  width: 15%;
+  height: 22%;
+}
+.logo-img-link:hover .logo-img-swap {
+  display: inline;
+}
+.logo-img-link:hover #logo-img {
+  display: none;
 }
 #home {
   display: flex;
@@ -85,6 +106,20 @@ header {
 #duck {
   display: flex;
   background-color: #decdf5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.duck-image {
+  width: 40%;
+  height: 40%;
+}
+.duck {
+  width: 100%;
+}
+.link-img-duck {
+  display: flex;
+  justify-content: center;
 }
 
 .text {
@@ -93,25 +128,33 @@ header {
   justify-content: center;
   align-items: center;
   flex-grow: 2;
-  padding: 2%;
+  padding: 0 10%;
   font-size: 1.5rem;
+  text-align: center;
 }
 
-.text p {
-}
-
-.duck {
+.main-section1-p {
+  margin: 0;
 }
 
 #emergency {
   background-color: #656176;
+}
+#emergency-header {
+  text-align: center;
+  padding: 5%;
+  margin: 0;
+}
+.emergency-img {
+  width: 50px;
+  height: 50px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -126,11 +169,6 @@ footer {
   background-color: #534d56;
 }
 
-.duck-image {
-  width: 40px;
-  height: 40px;
-}
-
 .github {
   width: 40px;
   height: 40px;
@@ -141,6 +179,19 @@ footer {
   text-align: center;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  flex-wrap: wrap;
+}
+input {
+  min-height: 45px;
+}
+button {
+  min-height: 51px;
+}
 a {
 }
 a:hover {
